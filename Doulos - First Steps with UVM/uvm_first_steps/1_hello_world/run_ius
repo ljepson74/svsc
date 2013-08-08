@@ -1,0 +1,7 @@
+#!/bin/sh
+
+IUS_HOME=`ncroot`
+
+irun \
+-uvmhome ${IUS_HOME}/tools/uvm-1.1 \
+uvm_hello_world.sv

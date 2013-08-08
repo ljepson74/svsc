@@ -1,0 +1,8 @@
+#!/bin/sh
+
+vcs -sverilog -CFLAGS -DVCS \
++incdir+${UVM_HOME}/src \
+${UVM_HOME}/src/dpi/uvm_dpi.cc \
+${UVM_HOME}/src/uvm.sv \
+uvm_interface.sv \
+-R
