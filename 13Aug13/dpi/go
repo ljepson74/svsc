@@ -1,0 +1,6 @@
+rm -rf work
+LC_ALL=POSIX vsim -c -do "do run.do"
+
+
+
+
