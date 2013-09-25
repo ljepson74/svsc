@@ -1,0 +1,10 @@
+set -e
+rm -rf work
+vlib work
+vlog -sv -f run.f
+
+vsim -c tb -do "do run.do"
+
+
+
+
