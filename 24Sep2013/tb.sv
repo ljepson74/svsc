@@ -19,6 +19,6 @@ module tb();
    a a0(.d(d), .m(m));
 
    initial
-     $monitor("hello %x", m);
+     $monitor("hello and hola and nihao %x", m);
 
 endmodule
