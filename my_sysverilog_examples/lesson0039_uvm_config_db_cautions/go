@@ -1,0 +1,1 @@
+rm -rf INCA_libs/; irun -sv -uvm -uvmhome /vl/edatools/extern/Cadence/INCISIV/12.1/015/tools/uvm-1.1/uvm_lib/uvm_sv/ svs_test.sv top.sv -define UVM_CONFIG_DB_TRACE -uvmtest svs_test +UVM_TESTNAME=svs_test

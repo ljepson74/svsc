@@ -1,0 +1,7 @@
+-- Demos the ex_otm_layering example
+load ex_otm_layering/e/ex_otm_layering_top
+load ex_otm_layering/examples/ex_otm_layering_test
+trace sequence
+set message MEDIUM
+test
+    

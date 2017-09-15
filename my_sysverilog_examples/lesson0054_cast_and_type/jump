@@ -1,0 +1,4 @@
+
+int someint;
+
+someint = int'(logicfive);

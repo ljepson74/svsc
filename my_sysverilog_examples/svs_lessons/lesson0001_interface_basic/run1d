@@ -1,0 +1,1 @@
+irun -sv score_items_if.sv stimulus_w_if.sv dut_w_if.sv top_final.sv

@@ -1,0 +1,1 @@
+irun c_code.c -sv tb.sv

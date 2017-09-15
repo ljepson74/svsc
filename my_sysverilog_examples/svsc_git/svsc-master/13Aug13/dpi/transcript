@@ -1,0 +1,12 @@
+# do run.do 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# vsim -c -sv_lib c_code tb 
+# Loading sv_std.std
+# Loading work.tb
+# Loading ./c_code.so
+# Hello from C code
+# hello 1

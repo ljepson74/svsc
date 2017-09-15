@@ -1,0 +1,12 @@
+set lang c++
+handle SIGCONT SIGSTOP SIGSEGV SIGBUS SIGFPE SIGALRM SIGEMT SIGPIPE nostop noprint
+set args -f ./INCA_libs/irun.lnx86.12.20.nc/gdb_ncsim.args
+break nc_signal_raised
+break ncdbg_fatal
+break scDebugEntry
+break ncdbg_libs_loaded
+commands 1
+handle SIGSEGV SIGBUS SIGFPE stop print
+continue
+end
+run

@@ -1,0 +1,11 @@
+//
+
+
+//use line in the source that does not initialize
+rm ONE ; rm -rf INCA_libs ; irun ASSERT_WARNING_STD_LOGIC_ARITH.vhd -top foo -access +rwc -input "@ run 100 ; exit" > ONE
+
+//use line in source that does initialize
+rm ONEb ; rm -rf INCA_libs ; irun ASSERT_WARNING_STD_LOGIC_ARITH.vhd -top foo -access +rwc -input "@ run 100 ; exit" > ONEb
+
+//here we turn off the assertions
+rm TWO ; irun ASSERT_WARNING_STD_LOGIC_ARITH.vhd -top foo -access +rwc -input "@set pack_assert_off {std_logic_arith} ; run 100 ; exit" > TWO

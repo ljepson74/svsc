@@ -1,0 +1,41 @@
+1i. Macro w basic, vanilla substition
+`define NUMBER 5
+`define a_size 32
+// logic [0:+`a_size] bus2 = 64'hDEADbeef1ACEcafe;
+   logic [`a_size-1:0] bus2 = 64'hDEADbeef1ACEcafe;
+   $display("bus2=%x",bus2);
+
+1a. Macro w substition (that happens to be a command) no args
+`define talk $display("hello wrold");
+1b. Macro w no args, but line-continuation
+`define talk $display("hello wrold. this is very long.  that is a typo back there and this is a really \
+lengthy\n line");
+
+
+2a. Macro w arg for string
+`define talk(topic_string) $display("hello %0s",topic_string);
+2b. Macro w arg for int
+`define talk(topic_int) $display("hello %0d",topic_int);
+2c. Macro w arg for int - DO NOT CANNOT SPECIFY DATA TYPE. THIS TEXT SUBSTITUTION
+`define talk(int topic_int) $display("hello %0d",topic_int);
+2d. Macro w arg w default
+`define talk(topic_int=5) $display("hello %0d",topic_int);
+2e. Macro w args, some w defaults
+`define talk(lang1="ESPANOL",lang2=,lang3="POLSKIY") $display("hello I talk %0s and %0s and %0s",lang1,lang2,lang3);
+
+
+
+
+
+.
+
+
+// `define drive_this_display_that(drive_me="bus1",drive_me_value=0,display_me="bus1") \
+
+   `define drive_this_display_that(drive_me="bus1") \
+   function void drive_me``_check();\
+     $display("Hi, bus1=%0d",bus1);\
+       bus1 = 5;\
+              $display("Now bus1=%0d",bus1);\
+              endfunction
+

@@ -1,0 +1,45 @@
+csi-ncelab - CSI TRIAL: Command line:
+ncelab
+    -f /user/lkj/Perforce/linc.jepson_MAINmg_ws/linc.jepson/sandbox/SIMPLE_LINC_UVM/ac_uvm/INCA_libs/irun.lnx86.10.20.nc/ncelab.args
+        +access+rwc
+        +incdir+/vl/edatools/extern/Cadence/INCISIV/10.2/030/tools/uvm-1.1/uvm_lib/uvm_sv/src/
+        +incdir+.
+        +access+rwc
+        -loadpli /vl/edatools/extern/Cadence/INCISIV/10.2/030/tools/uvm-1.1/uvm_lib/uvm_sv/lib/libuvmpli.so:uvm_pli_boot
+        -ACCESS +rwc
+        -ACCESS +rwc
+        -MESSAGES
+        -XLMODE ./INCA_libs/irun.lnx86.10.20.nc
+        -RUNMODE
+        -CDSLIB ./INCA_libs/irun.lnx86.10.20.nc/cds.lib
+        -HDLVAR ./INCA_libs/irun.lnx86.10.20.nc/hdl.var
+        -WORK worklib
+        -HASXLMODE
+    -CHECK_VERSION TOOL:	irun	10.20-p008
+    -LOG_FD 4
+
+csi-ncelab - CSI TRIAL: *F,INTERR: INTERNAL EXCEPTION
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	ncelab	10.20-p008
+  HOSTNAME: frozone.internal.caustic.com
+  OPERATING SYSTEM: Linux 2.6.18-164.el5xen #1 SMP Thu Sep 3 04:03:03 EDT 2009 x86_64
+  MESSAGE: sv_seghandler - trapno -1 addr(0xFED89FFC)
+-----------------------------------------------------------------
+
+csi-ncelab - CSI TRIAL: Cadence Support Investigation, recording details
+Verilog Syntax Tree: sequential block statement (VST_S_SEQ_BLOCK) in verilog_package worklib.uvm_pkg:sv (VST)
+	File: /vl/edatools/extern/Cadence/INCISIV/10.2/030/tools/uvm-1.1/uvm_lib/uvm_sv/src/reg/uvm_reg_block.svh, line 1638, position 28
+	Scope: uvm_pkg::uvm_reg_block::update.unmblk2.unmblk1
+	Source  :    foreach (blks[blk_]) begin
+	Position:                             ^
+Verilog Syntax Tree: task declaration (VST_D_TASK) in verilog_package worklib.uvm_pkg:sv (VST)
+	File: /vl/edatools/extern/Cadence/INCISIV/10.2/030/tools/uvm-1.1/uvm_lib/uvm_sv/src/reg/uvm_reg_block.svh, line 659, position 28
+	Scope: uvm_pkg::uvm_reg_block::update
+	Decompile: update
+	Source  :    extern virtual task update(output uvm_status_e       status,
+	Position:                             ^
+csi-ncelab - CSI TRIAL: investigation complete took 2.389 secs, send this file to Cadence Support

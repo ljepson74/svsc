@@ -1,0 +1,7 @@
+#!/bin/sh
+
+qverilog \
++incdir+${UVM_HOME}/src \
+${UVM_HOME}/src/dpi/uvm_dpi.cc \
+${UVM_HOME}/src/uvm.sv \
+uvm_seqr_driver.sv

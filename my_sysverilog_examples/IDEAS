@@ -1,0 +1,7 @@
+IDEA1:
+Make parameterizable module.  (case  where reals, goal and my_goal, from perf testing)
+Have a function use those values.
+Then add args to the function, so can override the parameters, for use in calculation
+I had problems with this.
+
+

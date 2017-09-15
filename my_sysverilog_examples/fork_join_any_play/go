@@ -1,0 +1,3 @@
+#pass a seed into me.   ex:   go 2353
+../img_grid_irun.csh -sv fork_join_any_play.sv -svseed $1
+

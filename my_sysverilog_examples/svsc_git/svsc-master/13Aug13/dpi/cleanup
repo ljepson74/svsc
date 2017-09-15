@@ -1,0 +1,6 @@
+rm -rf work
+rm c_code.o c_code.so
+
+
+
+

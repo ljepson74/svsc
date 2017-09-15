@@ -1,0 +1,1 @@
+perl /user/lkj/linc.jepson_gandalf_green_ws/infra/tools/NaturalDocs/NaturalDocs-1.52/NaturalDocs -r -i . -o html output_man -p projdir/

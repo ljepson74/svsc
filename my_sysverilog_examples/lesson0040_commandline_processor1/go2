@@ -1,0 +1,4 @@
+
+rm -rf INCA_libs/; irun -licqueue -sv -uvm -uvmhome /vl/edatools/extern/Cadence/INCISIV/12.1/015/tools/uvm-1.1/uvm_lib/uvm_sv/  top.sv +svsc=1234 +svsc=allenistall +svsc123=trex +UVM_VERBOSITY=PETERRICH
+
+#rm -rf INCA_libs/; irun -sv -uvm -uvmhome /vl/edatools/extern/Cadence/INCISIV/12.1/015/tools/uvm-1.1/uvm_lib/uvm_sv/ ivm_cmdline_processor.svh svs_dut.sv svs_if.sv svs_top.sv svs_env.svh svs_test.sv -define UVM_CONFIG_DB_TRACE -uvmtest svs_test +UVM_TESTNAME=svs_test

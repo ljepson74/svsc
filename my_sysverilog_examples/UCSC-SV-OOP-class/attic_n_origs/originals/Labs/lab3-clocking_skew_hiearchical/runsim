@@ -1,0 +1,1 @@
+vcs -full64 -v 2011.03-2 +vcs+lic+wait -sverilog -R -l vcs.log testbench.sv testcase.sv ram.v +ntb_random_seed_automatic

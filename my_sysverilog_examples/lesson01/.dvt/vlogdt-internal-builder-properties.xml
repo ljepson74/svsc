@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="attributes">
+	<item value="true" key="SyntacticErrorCheckMode"/>
+	<item value="true" key="SyntacticWarningCheckMode"/>
+	<item value="true" key="SemanticErrorCheckMode"/>
+	<item value="true" key="SemanticWarningCheckMode"/>
+	<item value="false" key="IndependentTopMode"/>
+	<item value="true" key="RemoveDuplicateTopFiles"/>
+	<item value="true" key="VerilogFileExtensionMode"/>
+	<item value="true" key="ShowBuilderProgressLogInConsole"/>
+	<item value="true" key="AutoLinkResources"/>
+</section>

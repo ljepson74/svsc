@@ -1,0 +1,9 @@
+
+I use the following command to run this example.
+This code has been modified from and sv-sc example in here: ex_e_sv_sc_tlm/.
+Cadence headers were removed temporarilly to facilitate jumping between files and getting as much code on-screen at once, while trying to understand how this all works.
+
+
+See diagram uvm_tlm_xunit_diagram.pdf.
+
+rm -rf INCA_libs irun.key irun.log ncsc.log ; go.sh

@@ -1,0 +1,1 @@
+irun -sysc *.vhd *.cpp -gdb -v93 -gnu -top top:a -access +rwc -g

@@ -1,0 +1,2 @@
+#do.grid -jobname IRUN_lkj_play -do irun -sv dpi_play.sv
+do.grid -jobname IRUN_lkj_play -do irun -f dpi_play.vf

@@ -1,0 +1,86 @@
+*** Message Type: info ***
+When: Tue Jan 05 20:34:48 PST 2016
+SimVision started.
+Version: TOOL:  simvision       14.20-s022
+User: lkj
+Host: srgo2img02.ba.imgtec.org
+Platform: Linux/x86_64/2.6.18-274.el5
+Started: Tue Jan 05 20:34:48 PST 2016
+Command: /vl/edatools/extern/Cadence/INCISIV/14.2/022/tools.lnx86/simvision/bin/simvision.exe -connect dc:srgo2img02.ba.imgtec.org:49053 -nocopyright
+Work Directory: /user/lkj/Perforce/linc.jepson_learning_ws/MAIN/sysverilog_sandbox/lesson0069_sequences_w_or
+ 
+*** Message Type: info ***
+When: Tue Jan 05 20:34:50 PST 2016
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Jan 05 20:34:53 PST 2016
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Tue Jan 05 20:34:55 PST 2016
+Connect to Simulator
+      Design: worklib.top:sv
+   Languages: verilog assertion
+   Simulator: NC-Sim
+     Version: TOOL:   ncsim   14.20-s022
+        User: lkj
+        Host: srgo2img02.ba.imgtec.org
+Time Started: Tue Jan 05 20:34:42 PST 2016
+  Process ID: 22151
+   Directory: /user/lkj/Perforce/linc.jepson_learning_ws/MAIN/sysverilog_sandbox/lesson0069_sequences_w_or
+     Command: irun -sv top2.sv -gui -linedebug
+
+ 
+*** Message Type: info ***
+When: Tue Jan 05 20:34:58 PST 2016
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Tue Jan 05 20:35:09 PST 2016
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Tue Jan 05 20:38:50 PST 2016
+Exit NC-Sim: abnormal
+      Design: worklib.top:sv
+   Languages: verilog assertion
+   Simulator: NC-Sim
+     Version: TOOL:   ncsim   14.20-s022
+        User: lkj
+        Host: srgo2img02.ba.imgtec.org
+Time Started: Tue Jan 05 20:34:42 PST 2016
+  Process ID: 22151
+   Directory: /user/lkj/Perforce/linc.jepson_learning_ws/MAIN/sysverilog_sandbox/lesson0069_sequences_w_or
+     Command: irun -sv top2.sv -gui -linedebug
+
+ 
+*** Message Type: error ***
+When: Tue Jan 05 20:38:50 PST 2016
+NC-Sim Crashed:
+      Design: worklib.top:sv
+   Languages: verilog assertion
+   Simulator: NC-Sim
+     Version: TOOL:   ncsim   14.20-s022
+        User: lkj
+        Host: srgo2img02.ba.imgtec.org
+Time Started: Tue Jan 05 20:34:42 PST 2016
+  Process ID: 22151
+   Directory: /user/lkj/Perforce/linc.jepson_learning_ws/MAIN/sysverilog_sandbox/lesson0069_sequences_w_or
+     Command: irun -sv top2.sv -gui -linedebug
+      Design: worklib.top:sv
+   Languages: verilog assertion
+   Simulator: NC-Sim
+     Version: TOOL:      ncsim   14.20-s022
+        User: lkj
+        Host: srgo2img02.ba.imgtec.org
+Time Started: Tue Jan 05 20:34:42 PST 2016
+  Process ID: 22151
+   Directory: /user/lkj/Perforce/linc.jepson_learning_ws/MAIN/sysverilog_sandbox/lesson0069_sequences_w_or
+     Command: irun -sv top2.sv -gui -linedebug
+
+ 
+*** Message Type: info ***
+When: Tue Jan 05 20:38:55 PST 2016
+SimVision Exit.
+ 

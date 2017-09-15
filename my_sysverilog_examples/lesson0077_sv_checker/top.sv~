@@ -1,0 +1,10 @@
+module top;
+
+   checker my_checker;
+
+
+   initial begin
+   end
+   
+
+endmodule // top

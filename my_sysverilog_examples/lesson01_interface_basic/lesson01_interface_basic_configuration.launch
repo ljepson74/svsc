@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="ro.amiq.dvt.launch.DVTGenericLaunchConfigurationType">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="lesson01_interface_basic"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="process_factory_id" value="ro.amiq.dvt.launch.DVTProcessFactory"/>
+<stringAttribute key="ro.amiq.dvt.launch.FILTERS_KIND" value=""/>
+<stringAttribute key="ro.amiq.dvt.launch.GENERIC_COMMAND_ATTR" value="/bin/csh -ic &quot;irun stimulus.sv dut.sv top.sv&quot;"/>
+<stringAttribute key="ro.amiq.dvt.launch.LAUNCH_PATTERNS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;patterns/&gt;"/>
+<stringAttribute key="ro.amiq.dvt.launch.PROJECT_ATTR" value="lesson01_interface_basic"/>
+<stringAttribute key="ro.amiq.dvt.launch.WORKING_DIRECTORY" value="${workspace_loc:/lesson01_interface_basic}"/>
+<booleanAttribute key="ro.amiq.dvt.launch.WORKING_SET_LINK_FILTER" value="true"/>
+</launchConfiguration>

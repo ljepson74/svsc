@@ -1,0 +1,44 @@
+
+###################################################################
+# BEGIN: lab-program README
+###################################################################
+
+A Makefile has been added to simplify the running of the relevant
+test scenario's. 
+
+  [1] Usage is displayed by running the Makefile with no options. 
+
+      > make             -> display below usage details.
+
+        ==================================================
+        Usage:
+          > make test_index       - see test list below
+          > make clean            - run CLEAN script
+          > make regress          - run all tests and generate summary
+          > make summary          - generate summary
+
+            -----------------------------------------
+            test_index      test_name
+            -----------------------------------------
+            t1              counter_sanity_check
+            t2              counter_count2max
+            t3              counter_count2max_bug
+            t4              counter_disable_count
+            t5              counter_reset_count
+            t6              counter_reset_disable
+            t7              counter_preload
+            t8              counter_count2max_detect
+        ================================================== 
+
+  [2] To run a particular testcase use the test_index
+
+      > make t1          -> runs test t1 (counter_sanity_check)
+      > make t8          -> runs test t8 (counter_count2max_detect)
+
+  [3] To run CLEAN script to remove generated directories and file
+
+      > make clean       -> runs CLEAN script
+
+###################################################################
+# END: lab-program README
+###################################################################

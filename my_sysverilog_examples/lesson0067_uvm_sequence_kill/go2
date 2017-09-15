@@ -1,0 +1,2 @@
+#rm -rf INCA_libs/; irun -sv -uvm -uvmhome /vl/edatools/extern/Cadence/INCISIV/14.2/006/tools/uvm-1.1/uvm_lib/uvm_sv/ svs_dut.sv svs_if.sv svs_env.svh svs_test.sv svs_top.sv
+rm -rf INCA_libs/; irun -sv -uvm -uvmhome /vl/edatools/extern/Cadence/INCISIV/14.2/006/tools/uvm-1.1/uvm_lib/uvm_sv/ svs_env.svh svs_test.sv svs_top.sv

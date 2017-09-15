@@ -1,0 +1,2 @@
+rm -rf INCA* *log cov_work html_02* waves.shm
+do.grid irun top.sv -coverage U -access +rwc -input waves.tcl

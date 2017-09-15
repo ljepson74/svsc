@@ -1,0 +1,1 @@
+irun -sv -uvm -uvmhome path_prefix/Cadence/INCISIV/12.1/004/tools/uvm-1.1 -f list.vf -svseed 112

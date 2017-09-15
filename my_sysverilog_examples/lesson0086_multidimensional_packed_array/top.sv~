@@ -1,0 +1,32 @@
+module packed_array_play;
+
+   
+   bit [2:0] [7:0] mdpa1;  //multidimensional packed array #1
+   bit [7:0] [2:0] mdpa2;  //multidimensional packed array #2
+   
+   initial begin
+      set_packed_a(8'h41);
+      read_packed_a();
+
+      $display($time,"\n\n mdpa1[0]=%0x",mdpa1[0]);     
+
+   end // initial begin
+
+
+   function void set_packed_a;
+      input logic [7:0] junk;
+
+      for (int i=0; i<=3; i++) begin
+	 mdpa1[i]  = junk;
+	 junk 	      = junk+ 1 ;  //$urandom;	 
+      end      
+   endfunction
+
+
+   function void read_packed_a;
+      for (int j=0; j<=3; j++) begin
+	 $display("mdpa1[%0d]=0x:%0x = bin:%0b",j, mdpa1[j], mdpa1[j]);
+      end
+   endfunction
+   
+endmodule

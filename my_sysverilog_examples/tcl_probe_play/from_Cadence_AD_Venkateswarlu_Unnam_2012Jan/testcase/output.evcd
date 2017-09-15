@@ -1,0 +1,32 @@
+$date
+    Fri Jan 13 23:10:15 2012
+$end
+$version
+   ncsim 10.20-s105
+$end
+$timescale
+    1ns
+$end
+
+
+$scope module test_drink.top $end
+$var port       1 !          clk $end
+$var port       1 "        reset $end
+$var port      [3:0] #   sd1_rd_en_io $end
+$var port      [3:0] $   nickel_out $end
+$upscope $end
+
+$enddefinitions $end
+
+#0
+pD  6  0    !
+pU  0  6    "
+pTTTT  0000  0000    #
+pFFFF  0000  0000    $
+
+#100
+pU  0  6    !
+
+$comment
+$dumpports closed at time:  200
+$end

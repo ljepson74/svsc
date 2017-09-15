@@ -1,0 +1,16 @@
+1. comment
+   items are imported so that they can be used immediately in whatever is being compiled
+   some folks advocate NOT doing wildcard imports (a la  import twig_pkg::*;, but each thing explictly)
+
+2. code change
+   once items are compiled into their package (ex: twig_pkg::* is in branch_pkg, then you can use them)
+   action: add  chained calls to functions up the packages.   then comment them out
+
+3. code change
+   action: try to call method from a package that is not directly imported.  it FAILS as expected
+   
+3. question
+   what does it mean to move the imports in the packages from inside to outside?   what wrt scope?
+   result:  w/ irun, it allows the method that is not directly imported to be called.   Why?
+
+4. 

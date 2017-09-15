@@ -1,0 +1,36 @@
+outfile=RESULTS_FILE
+svfile=../random_play.sv
+
+rm -rf random_nowaves random_waves
+mkdir  random_nowaves random_waves
+
+pushd random_nowaves
+irun $svfile -svseed $1
+mv irun.log irun.log.nowaves
+popd
+
+pushd random_waves
+irun $svfile -svseed $1 +define+DUMP_WAVES
+mv irun.log irun.log.waves
+popd
+
+
+echo "*************************************************"  > $outfile
+echo "****Run with set seed, our random variables are:"  >>$outfile
+grep "You got" random_nowaves/irun.log.nowaves           >>$outfile
+echo ""                                                  >>$outfile
+echo "****Run with set seed, our random variables are:"  >>$outfile
+grep "You got" random_waves/irun.log.waves               >>$outfile
+echo ""                                                  >>$outfile
+
+
+
+echo "*************************************************"
+echo "*************************************************"
+
+ls random_nowaves/ random_waves/
+more $outfile
+
+######To use a random seed each time:
+#irun random_play.sv -svseed random
+#irun random_play.sv -svseed random +define+NO_WAVES

@@ -1,0 +1,1 @@
+irun -sv random_real_play.sv +define+RANDOM_SEED=988

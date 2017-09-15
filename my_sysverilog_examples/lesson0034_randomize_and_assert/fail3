@@ -1,0 +1,48 @@
+irun: 13.10-s006: (c) Copyright 1995-2013 Cadence Design Systems, Inc.
+Recompiling... reason: file './top.sv' is newer than expected.
+	expected: Thu Jan 16 18:39:51 2014
+	actual:   Thu Jan 16 18:40:28 2014
+file: top.sv
+	module worklib.top:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.top:sv <0x34d8ff4f>
+			streams:   9, words:  5274
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   1       1
+		Registers:                 6       7
+		Initial blocks:            1       1
+		SV Class declarations:     1       1
+		SV Class specializations:  1       1
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+SVSEED default: 1
+ncsim> source /vl/edatools/extern/Cadence/INCISIV/13.1/006/tools/inca/files/ncsimrc
+ncsim> source /user/lkj/.ncsimrc
+no
+ncsim> run
+******* Going to play with coin
+      if(! (randomize(coin) with {coin==1; coin==0;}) )          begin endit("#3"); end
+                    |
+ncsim: *W,SVRNDF (./top.sv,12|20): The randomize method call failed.
+Observed simulation time : 0 FS + 0
+ncsim: *W,RNDOCS: These constraints contribute to the set of conflicting constraints:
+
+   constraint illegale {coin==1; coin==0;} (./top.sv,5)
+ncsim: *W,RNDOCS: These variables contribute to the set of conflicting constraints:
+
+rand variables:
+       coin [./top.sv, 4]
+
+**********Failed #3
+Simulation complete via $finish(1) at time 0 FS + 0
+./top.sv:18       $display("**********Failed %0s",note); $finish;
+ncsim> exit

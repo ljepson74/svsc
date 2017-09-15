@@ -1,0 +1,13 @@
+module top;
+
+   bit clk;
+
+interface play(input bit clk);
+endinterface // play
+
+
+
+   initial begin
+   end
+
+endmodule

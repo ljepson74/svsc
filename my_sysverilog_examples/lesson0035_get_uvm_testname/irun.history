@@ -1,0 +1,1 @@
+s1(18Apr2016:11:46:20):  /vl/edatools/extern/Cadence/INCISIV/15.1/011/tools.lnx86/bin/irun -sv -uvm -uvmhome /vl/edatools/extern/Cadence/INCISIV/12.1/015/tools/uvm-1.1/uvm_lib/uvm_sv/ top.sv -uvmtest my_test +UVM_TESTNAME=my_test 

@@ -1,0 +1,12 @@
+module top;
+   typedef enum {alpha, beta, gamma, delta, epsilon} greek;
+
+
+   initial begin
+      for (greek letters=greek.first; letters<greek.num;letters.next) begin
+	 $display(" *** %0s", letters.name);
+      end
+
+   end
+
+endmodule : top

@@ -1,0 +1,72 @@
+//UCSC Extension:Advanced Verification with SystemVerilog OOP Testbench Course Project.
+//Linc Jepson,2014.  Instructor B. Ting.
+
+This project is a rudimentary SystemVerilog class-based testbench of a
+10Gb Ethernet MAC Core, from OpenCores.
+This testbench has evolved a bit beyond what was planned in the testplan.
+The driver has been broken into a generator.sv and driver.sv
+A coverage testbench component has also been added.
+There are still many areas for improvement in this testbench.  However,
+this testbench should a good starting point for someone wishing to
+thoroughly test the Ethernet MAC Core DUT.
+
+
+To run a single test:
+cd sim/verilog/
+runsim0 //loopback
+runsim1 //missing_eop
+runsim2 //missing_sop
+runsim3 //undersize_packet
+runsim4 //oversize_packet
+runsim5 //zero_ipg_packet
+Each sim will create a logfile.
+
+
+To run a regression:
+cd script/
+run_regression
+Results will be displayed on screen and stored in run_regression_results.
+To see log files, cd ../sim/verilog/
+
+Coverage:
+Code and functional coverage are currently gathered for all tests.
+A directory called COVERAGE.vdb is generated.
+urg -lca -dir COVERAGE.vdb  //to generate a urgReport/ directory
+firefox urgReport/dashboard.html //to spawn a browser to review coverage
+Note: function coverage is under "group" in the html.
+
+Waveforms:
+Waveforms are dumped as a .vpd file for all tests.
+
+
+For some useful aliases in csh:
+cd lab-project-10gEthernetMAC
+source sourceme
+
+
+ToDoToImprove:
+*Compile all code once, run individually.
+*Break driver up into generator-of-packets and driver.  Specialists, both.
+*Add commmand-line +args to:
+   -dump waves
+   -gather coverage
+   -specify # of packets to run
+   -run a regression vs. individual test
+*Add second monitor to monitor input to DUT, so that driver is not just passing
+  to the scoreboard data it thinks it sends to DUT.
+*Improve Error gathering and print nice report (how many lost packets? how many mismatches?  how many assertion errors on interfaces? other?)  A special data class can track error types.
+*Create data class that represents a group of packets. Packets within this group might have certain characteristics.
+*Give all tests a testname, which can be printed in the summary
+*line 333 of tx_dequeue.v looks like it has a typo.  It seems like one should be for remote faults. Target it with a test: 
+      line 333:            !status_local_fault_ctx && !status_local_fault_ctx) begin
+*The timeout mechanism should be improved.  When the environment is told how many tests to send, the scoreboard (not just
+ the driver) should receive that number.  When it receives all, the test should end.  If it doesn't after some 'reasonable'
+ amount of time (watchdog timer), then the test should end.
+
+ToFix:
+*Number packets specified in testcases is not always what occurs.
+*Find all "lkj" commands that indicate areas for improvement
+*Investigate why the wishbone interface had to have clk toggle and reset pulse
+after adding the wb_if.  At some point, setting them both to 0 at time-0
+(as the original testbench provide had done) was no longer enough to put the 
+DUT in a functional state.

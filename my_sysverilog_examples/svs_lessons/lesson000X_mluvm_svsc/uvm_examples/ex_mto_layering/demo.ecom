@@ -1,0 +1,7 @@
+-- Demos the ex_mto_layering example
+load ex_mto_layering/e/ex_mto_layering_top
+load ex_mto_layering/examples/ex_mto_layering_test
+trace sequence
+set message MEDIUM
+test
+    

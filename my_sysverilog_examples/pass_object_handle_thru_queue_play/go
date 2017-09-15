@@ -1,0 +1,1 @@
+irun -sv high_class.sv pass_object_handle_thru_queue_play.sv

@@ -1,0 +1,3 @@
+rm -rf INCA_libs/ cov_work/;
+irun -sv iccr_play.sv -covfile mycovfile.ccf -covoverwrite -coverage all -covtest my_covtest;
+iccr my.cf &

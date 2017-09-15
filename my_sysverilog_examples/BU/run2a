@@ -1,0 +1,1 @@
+irun -sv score_items_if.sv dut_w_if.sv class_bully_stimulus.svh top_vif.sv

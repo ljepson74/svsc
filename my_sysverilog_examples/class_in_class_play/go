@@ -1,0 +1,1 @@
+irun -sv class_c2.sv  class_c1.sv  class_in_class_play.sv 

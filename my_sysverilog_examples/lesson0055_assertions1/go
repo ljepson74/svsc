@@ -1,0 +1,1 @@
+rm -rf INCA*/; irun -sv top.sv

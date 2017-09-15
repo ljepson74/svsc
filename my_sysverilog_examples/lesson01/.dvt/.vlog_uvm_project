@@ -1,0 +1,4 @@
+<uvmenable>false</uvmenable>
+<uvmpath>$UVM_HOME</uvmpath>
+<uvmlinkenable>true</uvmlinkenable>
+<uvmlinkpath>uvm_src</uvmlinkpath>

@@ -1,0 +1,1 @@
+vcs -full64 +vcs+lic+wait +v2k -sverilog -R -l vcs.log testbench.sv  counter.v

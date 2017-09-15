@@ -1,0 +1,86 @@
+*** Message Type: info ***
+When: Tue Aug 27 19:58:19 PDT 2013
+SimVision started.
+Version: TOOL:  simvision       12.20-s004
+User: lkj
+Host: srgo2img01.ba.imgtec.org
+Platform: Linux/x86_64/2.6.18-274.el5
+Started: Tue Aug 27 19:58:19 PDT 2013
+Command: /vl/edatools/extern/Cadence/INCISIV/12.2/004/tools.lnx86/simvision/bin/simvision.exe -connect dc:srgo2img01.ba.imgtec.org:48534 -nocopyright
+Work Directory: /user/lkj/systemverilog_show/sysverilog_sandbox/lesson0024_assertion_play_0
+ 
+*** Message Type: info ***
+When: Tue Aug 27 19:58:20 PDT 2013
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Aug 27 19:58:21 PDT 2013
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Tue Aug 27 19:58:22 PDT 2013
+Connect to Simulator
+      Design: worklib.top:sv
+   Languages: verilog assertion
+   Simulator: NC-Sim
+     Version: TOOL:   ncsim   12.20-s004
+        User: lkj
+        Host: srgo2img01.ba.imgtec.org
+Time Started: Tue Aug 27 19:58:17 PDT 2013
+  Process ID: 25419
+   Directory: /user/lkj/systemverilog_show/sysverilog_sandbox/lesson0024_assertion_play_0
+     Command: irun -access +rwc -sv top.sv -gui
+
+ 
+*** Message Type: info ***
+When: Tue Aug 27 19:58:22 PDT 2013
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Tue Aug 27 19:59:01 PDT 2013
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Tue Aug 27 20:05:33 PDT 2013
+Exit NC-Sim: abnormal
+      Design: worklib.top:sv
+   Languages: verilog assertion
+   Simulator: NC-Sim
+     Version: TOOL:   ncsim   12.20-s004
+        User: lkj
+        Host: srgo2img01.ba.imgtec.org
+Time Started: Tue Aug 27 19:58:17 PDT 2013
+  Process ID: 25419
+   Directory: /user/lkj/systemverilog_show/sysverilog_sandbox/lesson0024_assertion_play_0
+     Command: irun -access +rwc -sv top.sv -gui
+
+ 
+*** Message Type: error ***
+When: Tue Aug 27 20:05:34 PDT 2013
+NC-Sim Crashed:
+      Design: worklib.top:sv
+   Languages: verilog assertion
+   Simulator: NC-Sim
+     Version: TOOL:   ncsim   12.20-s004
+        User: lkj
+        Host: srgo2img01.ba.imgtec.org
+Time Started: Tue Aug 27 19:58:17 PDT 2013
+  Process ID: 25419
+   Directory: /user/lkj/systemverilog_show/sysverilog_sandbox/lesson0024_assertion_play_0
+     Command: irun -access +rwc -sv top.sv -gui
+      Design: worklib.top:sv
+   Languages: verilog assertion
+   Simulator: NC-Sim
+     Version: TOOL:      ncsim   12.20-s004
+        User: lkj
+        Host: srgo2img01.ba.imgtec.org
+Time Started: Tue Aug 27 19:58:17 PDT 2013
+  Process ID: 25419
+   Directory: /user/lkj/systemverilog_show/sysverilog_sandbox/lesson0024_assertion_play_0
+     Command: irun -access +rwc -sv top.sv -gui
+
+ 
+*** Message Type: info ***
+When: Tue Aug 27 20:06:15 PDT 2013
+SimVision Exit.
+ 

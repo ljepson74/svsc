@@ -1,0 +1,2 @@
+*** Current stack trace:
+--> 0xf74219ec model::run()      + 10       ./INCA_libs/irun.lnx86.12.20.nc/librun.so

@@ -1,0 +1,1 @@
+rm -rf INC*; irun -sv leaf_pkg.sv twig_pkg.sv branch_pkg.sv trunk.svh top.sv

@@ -1,0 +1,2 @@
+irun -sysc *.vhd *.cpp -v93 -gnu -top top:a -access +rwc -g -layout cdebug
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "";
+echo "Your seed is >$1<, sir/ma'am";
+echo "";
+
+../img_grid_irun.csh -sv my_class.sv randomizing_subsection_of_reg_array_play.sv -svseed $1;

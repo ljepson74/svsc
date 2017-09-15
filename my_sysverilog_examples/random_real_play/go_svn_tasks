@@ -1,0 +1,1 @@
+irun -sv random_real_play.sv +define+USE_SVN_TB_RANDOM_NUMBER +incdir+../../../parsec/parsec_lib/tb/ +define+RANDOM_SEED=988

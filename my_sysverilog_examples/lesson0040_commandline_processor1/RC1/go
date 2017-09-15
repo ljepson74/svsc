@@ -1,0 +1,1 @@
+rm -rf INCA_libs/ ; do.grid irun -sv -uvm -uvmhome /vl/edatools/extern/Cadence/INCISIV/12.1/015/tools/uvm-1.1/uvm_lib/uvm_sv/ top.sv +UVM_VERBOSITY=UVM_HIGH +my_int=10 +my_string=JASPER

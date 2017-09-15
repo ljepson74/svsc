@@ -1,0 +1,1 @@
+irun -f run.f -uvmhome `ncroot`/tools/uvm-1.1 +UVM_NO_RELNOTES

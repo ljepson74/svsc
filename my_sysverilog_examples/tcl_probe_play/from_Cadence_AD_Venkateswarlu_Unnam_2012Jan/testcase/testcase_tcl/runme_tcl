@@ -1,0 +1,1 @@
+irun -clean  -mess drink_machine_top.v test_drink.v  -access rwc  -input probe.tcl

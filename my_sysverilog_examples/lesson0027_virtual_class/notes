@@ -1,0 +1,32 @@
+VIRTUAL CLASS
+1
+make virtual class (with simple function)
+make top and instantiate it.  you cannot.  error
+
+2
+extend virtual class
+instantiate in top. you can
+
+rule: virtual classes are not to be used, they are only to be extended.  that is all it means
+
+
+MAKE CLASS NON-VIRTUAL AND NOW WORK WITH 
+VIRTUAL METHODS (I believe the 2 are 100% independent)
+3.make function in base class virtual and use it
+
+4.make overriding function in extended class and use it
+
+5.change the function prototype in extended class and it will ERROR
+rule: a virtual method May or May Not be overridded.  as you wish.
+
+Pure virtual method
+6. remove the guts of base class virtual method. don't override it.  
+it still runs.
+maybe developer REQUIRED that whomeever extends it, does msthg with it.
+instead of doing above...
+
+7. make it pure virtual  //i.e. it must be implemented
+run.  error.   class must be abstract. i.e. virtual
+8. make class virtual
+
+

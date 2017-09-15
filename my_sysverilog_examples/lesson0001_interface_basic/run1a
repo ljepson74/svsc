@@ -1,0 +1,1 @@
+irun score_if.sv dut.sv stimulus.sv top.sv -svseed 3774

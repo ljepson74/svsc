@@ -1,0 +1,13 @@
+$date
+    Jan 13, 2012  23:28:46
+$end
+$version
+    TOOL:	ncsim	10.20-s105
+$end
+$timescale
+    1 ns
+$end
+$enddefinitions $end
+#0
+$dumpvars
+$end

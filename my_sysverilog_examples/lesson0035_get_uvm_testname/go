@@ -1,0 +1,1 @@
+rm -rf INCA_libs/; irun -sv -uvm -uvmhome /vl/edatools/extern/Cadence/INCISIV/12.1/015/tools/uvm-1.1/uvm_lib/uvm_sv/ top.sv -uvmtest my_test +UVM_TESTNAME=my_test

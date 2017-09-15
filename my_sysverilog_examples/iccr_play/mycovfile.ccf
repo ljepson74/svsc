@@ -1,0 +1,3 @@
+set_branch_scoring
+select_coverage -all -module lkj_tb
+deselect_coverage -all -instance lkj_tb.lkj_duv_2...

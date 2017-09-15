@@ -1,0 +1,3 @@
+# Either set the path to your UVM installation or use the version built into your simulator
+
+setenv UVM_HOME /home/sv0/ja/uvm-1.1a

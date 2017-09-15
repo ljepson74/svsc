@@ -1,0 +1,1 @@
+rm -rf INCA_libs/; irun -sv -uvm -uvmhome $UVM_HOME svs_test.sv svs_top.sv  -uvmtest svs_test

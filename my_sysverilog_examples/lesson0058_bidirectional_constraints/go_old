@@ -1,0 +1,1 @@
+irun -c -sv test_sv_birectional_constraints.sv && do.grid -mem 2000 --l Incisive_Enterprise_Simulator -jobname irunsv -do irun -sv test_sv_birectional_constraints.sv -run

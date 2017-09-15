@@ -1,0 +1,1 @@
+irun -licqueue -sv class_stimulus.svh my_if.sv dut.sv test.sv tb_top.sv

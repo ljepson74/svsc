@@ -1,0 +1,11 @@
+PATH xbus_tb_top.dut +rw
+PATH xbus_tb_top.dut.dut0  +r
+PATH xbus_tb_top.dut.dut0.st  +r
+PATH xbus_tb_top.dut.driver_bfm +rw
+PATH xbus_tb_top.dut.driver_bfm.ipipe +rw
+PATH xbus_tb_top.dut.driver_bfm.opipe +rw
+PATH xbus_tb_top.dut.monitor_bfm +rw
+PATH xbus_tb_top.dut.monitor_bfm.opipe +r
+PATH xbus_tb_top.dut.slave_monitor_bfm.opipe +r
+PATH xbus_tb_top.dut.slave_driver_bfm +rw
+PATH xbus_tb_top.dut.slave_driver_bfm.ipipe +rw

@@ -1,0 +1,1 @@
+vcs "+vcs+lic+wait" "+vcs+lic+wait" "-debug_pp" "-sverilog" "-R" "-l" "vcs.log" "test.sv" "serdes_interface.sv" "switch.sv" "+ntb_random_seed_automatic" "memory_interface.sv"

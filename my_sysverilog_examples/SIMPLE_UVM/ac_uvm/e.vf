@@ -1,0 +1,5 @@
++incdir+/vl/edatools/extern/Cadence/INCISIV/10.2/030/tools/uvm-1.1/uvm_lib/uvm_sv/src/
+/vl/edatools/extern/Cadence/INCISIV/10.2/030/tools/uvm-1.1/uvm_lib/uvm_sv/src/uvm_pkg.sv
++incdir+.
++access+rwc
+-uvm

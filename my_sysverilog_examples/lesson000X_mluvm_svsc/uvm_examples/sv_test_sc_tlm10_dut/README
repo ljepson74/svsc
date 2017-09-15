@@ -1,0 +1,86 @@
+sv_test_sc_tlm10_dut:			a mixed-language UVM test and DUT, with test in SystemVerilog and DUT in SystemC
+
+Example Name:
+-------------
+sv_test_sc_tlm10_dut
+
+Purpose:
+--------
+
+This example shows a mixed-language UVM test and DUT, with the DUT in 
+SystemC, and the test in SystemVerilog. The SystemC DUT gets input
+data from a put export, processes the input data and produces output data
+at a put port. The SystemC testbench sets up the DUT to be ready to
+communicate with the test.The SystemC testbench also performs the necessary 
+registrations of the DUT input export, and the DUT output port, that is 
+required for mixed-language UVM communication between the SystenmVerilog 
+test and the SystemC DUT. The SystemVerilog test uses a producer to generate 
+input data for the DUT and a checker to gather and analyse the output data 
+from the DUT. The SystemVerilog test env uses mixed-language UVM connection 
+functions to connect the test producer output port to the DUT input export, 
+and the test checker input imp to the DUT output port.
+
+This example uses the following mixed-language UVM
+interopearbility features between SystemVerilog and SystemC available in the
+IUS 8.2 release.
+ 
+* specify SystemC testbench top as a static top to ncelab, and specify
+  SystemVerilog test top as a quasi-static top to ncsim using -uvmtop
+* register SystemC TLM 1.0 port and export using ml_uvm_register()
+* register SystemVerilog UVM port and imp using ml_uvm::external_if()
+* connect SystemC TLM 1.0 port with SystemVerilog UVM imp, and 
+  SystemVerilog UVM port with SystemC TLM 1.0 export, using
+  ml_uvm::connect() in SystemVerilog
+* transfer data from SystemC TLM 1.0 port to SystemVerilog UVM imp, and
+  vice versa, using uvm_object class
+
+This example shows how to run in Incisive with irun.
+
+This usage is illustrated by the use_irun target in the Makefile.
+
+How to use:
+-----------
+
+To run this example do:
+
+"run_irun" 
+        or
+make NC_ROOT=`ncroot` ARCH=`cds_plat` COMPILER=gnu GCC_VERS=4.1 test_install
+        for gcc 4.1 or
+make NC_ROOT=`ncroot` ARCH=`cds_plat` COMPILER=gnu GCC_VERS=3.2.3 test_install
+        for gcc 3.2.3 (where supported) or
+make NC_ROOT=`ncroot` ARCH=`cds_plat` COMPILER=native test_install
+        for the "native' compiler (where supported)
+
+Included files:
+---------------
+
+Makefile
+  - Contains the use_irun target listed above to illustrate 
+    how to run this exampe with irun.
+
+Makefile.depends
+  - Contains object file dependencies for this example that are
+    necessary for Makefile to work correctly.
+
+README
+  - This file.
+
+ncsim.au
+  - Contains expected output from ncsim when running this example.
+
+run_irun
+  - Executable script to run this example using irun
+
+run.f
+  - irun options required by the run_irun script
+
+packet.h
+tbtop.cpp
+  - Contains SystemC src code required in this example.
+
+packet.sv
+test.sv
+  - Contains SystemVerilog source code required in this example.
+
+

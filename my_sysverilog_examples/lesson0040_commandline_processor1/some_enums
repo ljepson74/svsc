@@ -1,0 +1,2 @@
+
+typedef enum {BIT=0, INT=1, STRING=2} valuetype_e;  //this is now defined twice

@@ -1,0 +1,21 @@
+// Common Paths
+//DONT USE NOW   +incdir+$WORKDIR/parsec/common/lib/sv/img_base
+// Common Packages
+//DONE USE NOW   $WORKDIR/parsec/common/lib/sv/img_base/img_base_pkg.sv
+
+
++incdir+$UVM_HOME
+$UVM_HOME/uvm_pkg.sv
+
++libext+.sv
+
+// Testbench Paths
+//+incdir+$WORKDIR/gandalf/doppler/simple_linc
++incdir+.
+
+
+// Testbench Packages
+//$WORKDIR/gandalf/doppler/tb_pktbuf/tb/mother_pkg.sv
+// Testbench
+//$WORKDIR/gandalf/doppler/tb_pktbuf/tb/interfaces/wr_if.sv
+//$WORKDIR/gandalf/doppler/tb_pktbuf/tb/top.sv

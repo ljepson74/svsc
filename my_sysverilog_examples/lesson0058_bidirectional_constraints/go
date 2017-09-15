@@ -1,0 +1,1 @@
+irun -c -sv top.sv && do.grid -mem 2000 --l Incisive_Enterprise_Simulator -jobname irunsv -do irun -sv top.sv -run

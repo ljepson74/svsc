@@ -1,0 +1,1 @@
+irun dut.sv op_top.sv stim_gen.sv op_tb_tasks.sv test.sv -svseed 667

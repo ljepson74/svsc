@@ -1,0 +1,17 @@
+#!/bin/csh
+rm run_regression_results
+setenv SIMPATH ../sim/verilog
+pushd $SIMPATH
+CLEAN
+rm temptemp
+runsim0
+runsim1
+runsim2
+runsim3
+runsim4
+runsim5
+grep TestResult: vcs*log > temptemp
+sed -i 's/log:.*TestResult/  /g' temptemp
+mv temptemp ../../scripts/run_regression_results
+popd
+cat run_regression_results

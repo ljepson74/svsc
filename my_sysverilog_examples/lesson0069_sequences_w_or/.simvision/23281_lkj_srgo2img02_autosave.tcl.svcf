@@ -1,0 +1,217 @@
+
+#
+# Preferences
+#
+preferences set toolbar-Standard-WatchWindow {
+  usual
+  shown 0
+}
+preferences set toolbar-SimControl-SrcBrowser {
+  usual
+  position -row 0 -pos 4
+}
+preferences set toolbar-txe_waveform_navigate-WaveWindow {
+  usual
+  shown 1
+  position -row 4
+}
+preferences set savedlg-dbnames save
+preferences set txe-locate-add-fibers 1
+preferences set signal-type-colors {assertion #FF0000 output #FFA500 group #0099FF inout #00FFFF input #FFFF00 fiber #00EEEE errorsignal #FF0000 unknown #FFFFFF overlay #0099FF internal #00FF00 reference #FFFFFF}
+preferences set txe-view-hold 0
+preferences set txe-navigate-search-locate 0
+preferences set toolbar-Lint-CheckSetWindow {
+  usual
+  shown 0
+  position -pos 2
+  name Lint
+}
+preferences set plugin-enable-svdatabrowser-new 1
+preferences set toolbar-SimControl-WaveWindow {
+  usual
+  position -pos 3
+}
+preferences set toolbar-Windows-WatchWindow {
+  usual
+  shown 0
+}
+preferences set toolbar-CursorControl-WaveWindow {
+  usual
+  position -row 3 -anchor e
+}
+preferences set verilog-colors {Su #ff0099 0 {} 1 {} HiZ #ff9900 We #00ffff Pu #9900ff Sm #00ff99 X #ff0000 StrX #ff0000 other #ffff00 Z #ff9900 Me #0000ff La #ff00ff St {}}
+preferences set sb-tab-size 28
+preferences set toolbar-Gdb-SrcBrowser {
+  usual
+  position -row 0 -pos 1
+  name Gdb
+}
+preferences set txe-navigate-waveform-locate 1
+preferences set txe-view-hidden 0
+preferences set toolbar-TimeSearch-WaveWindow {
+  usual
+  position -row 2
+}
+preferences set waveform-height 24
+preferences set txe-search-show-linenumbers 1
+preferences set toolbar-OperatingMode-WaveWindow {
+  usual
+  position -pos 3
+  name OperatingMode
+}
+preferences set plugin-enable-svdatabrowser 0
+preferences set toolbar-NavSignalList-WaveWindow {
+  usual
+  position -row 2
+}
+preferences set toolbar-txe_waveform_toggle-WaveWindow {
+  usual
+  position -row 1 -pos 0
+}
+preferences set toolbar-Windows-SrcBrowser {
+  usual
+  position -pos 5
+}
+preferences set toolbar-Standard-WaveWindow {
+  usual
+  position -anchor e
+}
+preferences set plugin-enable-groupscope 0
+preferences set toolbar-txe_waveform_view-WaveWindow {
+  usual
+  shown 1
+  position -row 4
+}
+preferences set standard-methodology-filtering 1
+preferences set db-scope-vhdl-processstatements 0
+preferences set key-bindings {PageUp PageUp Edit>Undo Ctrl+z View>Zoom>In Alt+i PageDown PageDown ScrollDown {Down arrow} Edit>Copy Ctrl+c Edit>Select>All Ctrl+a Simulation>NextInScope F7 View>Zoom>FullY_widget y Edit>Create>Group Ctrl+g Edit>Ungroup Ctrl+Shift+G Format>Radix>Decimal Ctrl+Shift+D TopOfPage Home Edit>Create>Condition Ctrl+e {command -console SimVision {%w sidebar access designbrowser selectall}} Alt+a ScrollLeft {Left arrow} Edit>SelectAllText Alt+a Edit>TextSearchConsole Alt+s View>Zoom>FullX_widget = Windows>SendTo>Waveform Ctrl+w Simulation>Return Shift+F5 View>CallstackDown {Ctrl+Down arrow} Select>All Ctrl+a Edit>Delete Del Edit>Cut Ctrl+x Simulation>Run F2 Edit>Create>Marker Ctrl+m Format>Radix>Octal Ctrl+Shift+O View>Center Alt+c View>CallstackInWindow Ctrl+k Edit>SelectAll Ctrl+a File>OpenDatabase Ctrl+o Edit>Redo Ctrl+y View>ExpandSequenceTime>AtCursor Alt+x Format>Radix>Binary Ctrl+Shift+B File>CloseWindow Ctrl+Shift+w ScrollUp {Up arrow} ScrollRight {Right arrow} View>Zoom>FullX Alt+= Edit>Create>Bus Ctrl+b Explore>NextEdge Ctrl+\] View>Zoom>Cursor-Baseline Alt+z View>Zoom>OutX Alt+o Edit>GoToLine Ctrl+g View>Zoom>Fit Alt+= View>Zoom>OutX_widget o View>CallstackUp {Ctrl+Up arrow} View>Bookmarks>Add Ctrl+b Format>Radix>Hexadecimal Ctrl+Shift+H Simulation>Next F6 View>ShowValues Ctrl+s View>Zoom>InX Alt+i Edit>Create>MarkerAtCursor Ctrl+Shift+M View>Zoom>Out Alt+o Edit>TextSearch Ctrl+f Format>Signed Ctrl+Shift+S Edit>Paste Ctrl+v View>CollapseSequenceTime>AtCursor Alt+s Format>Radix>ASCII Ctrl+Shift+A View>Zoom>InX_widget i BottomOfPage End Simulation>Step F5 Explore>PreviousEdge {Ctrl+[}}
+preferences set sb-callstack-in-window 0
+preferences set sb-display-values 1
+preferences set plugin-enable-interleaveandcompare 0
+preferences set toolbar-Windows-CheckSetWindow {
+  usual
+  position -pos 3
+}
+preferences set toolbar-SimControl-WatchWindow {
+  usual
+  shown 0
+}
+preferences set toolbar-Windows-WaveWindow {
+  usual
+  position -row 1 -pos 1
+}
+preferences set txe-navigate-waveform-next-child 1
+preferences set toolbar-Windows-WatchList {
+  usual
+  position -pos 2
+}
+preferences set toolbar-WaveZoom-WaveWindow {
+  usual
+  position -row 3 -pos 1
+}
+preferences set vhdl-colors {H #00ffff L #00ffff 0 {} X #ff0000 - {} 1 {} U #9900ff Z #ff9900 W #ff0000}
+preferences set txe-locate-scroll-x 1
+preferences set txe-locate-scroll-y 1
+preferences set savedlg-simulator ppe
+preferences set db-scope-vhdl-unnamedprocesses 0
+preferences set txe-locate-pop-waveform 1
+preferences set whats-new-dont-show-at-startup 1
+preferences set toolbar-TimeSearch-WatchWindow {
+  usual
+  shown 0
+}
+#
+# Groups
+#
+catch {group new -name {handshake contributors} -overlay 0}
+group using {handshake contributors}
+group set -overlay 0
+group set -comment {simulator::top.handshake contributors}
+group clear 0 end
+
+group insert \
+    simulator::top.clk \
+    simulator::top.req \
+    simulator::top.ack
+
+#
+# Mnemonic Maps
+#
+mmap new -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+#
+# Design Browser windows
+#
+if {[catch {window new WatchList -name "Design Browser 1" -geometry 1579x935+246+18}] != ""} {
+    window geometry "Design Browser 1" 1579x935+246+18
+}
+window target "Design Browser 1" on
+browser using {Design Browser 1}
+browser set -scope  simulator::top 
+browser set \
+    -showprocesses 0 \
+    -showunnamedprocesses 0 \
+    -signalsort name
+browser yview see  simulator::top 
+browser timecontrol set -lock 0
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 1" -geometry 1810x875+61+78}] != ""} {
+    window geometry "Waveform 1" 1810x875+61+78
+}
+window target "Waveform 1" on
+waveform using {Waveform 1}
+waveform sidebar visibility partial
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 352 \
+    -units ns \
+    -valuewidth 75
+waveform baseline set -time 0
+
+set id [waveform add -signals  {
+	simulator::top.ack
+	} ]
+set id [waveform add -signals  {
+	simulator::top.acknowledge
+	} ]
+set id [waveform add -signals  {
+	simulator::top.clk
+	} ]
+set id [waveform add -signals  {
+	simulator::top.handshake
+	} ]
+waveform hierarchy expand $id
+
+set groupId0 [waveform add -groups {{handshake contributors}}]
+
+set id [waveform add -signals  {
+	simulator::top.req
+	} ]
+set id [waveform add -signals  {
+	simulator::top.request
+	} ]
+
+waveform xview limits 0 30ns
+
+#
+# Waveform Window Links
+#
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 1581x684+29+109
+
+#
+# Layout selection
+#

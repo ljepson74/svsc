@@ -1,0 +1,79 @@
+sv_producer_sc_consumer_test:			a mixed-language UVM test with producer in Systemc and consumer in SystemVerilog
+
+Example Name:
+-------------
+sv_producer_sc_consumer_test
+
+Purpose:
+--------
+
+This example shows a mixed-language UVM test, with a SystemC producer
+putting tokens into a SystemVerilog fifo for a SystemVerilog consumer
+to consume. This example uses the following mixed-language UVM
+interopearbility features between SystemVerilog and SystemC available in the
+IUS 8.2 release.
+ 
+* define parallel test tops in SystemVerilog and SystemC and specify them
+  to the simulator with the -uvmtop option
+* matching declarations and definitions of an uvm_object in SystemVerilog 
+  and SystemC
+* use SystemC sc_module as an UVM top
+* register SystemC TLM 1.0 port using ml_uvm_register()
+* register SystemVerilog TLM 1.0 imp using ml_uvm::external_if()
+* connect SystemC TLM 1.0 port with SystemVerilog TLM 1.0 imp using
+  ml_uvm_connect() in SystemC
+* alignment of the SystemVerilog UVM pre-run phases and SystemC pre-run
+  phases
+* data transfer from SystemC port to SystemVerilog imp 
+
+This example shows how to run in Incisive with irun.
+
+This usage is illustrated by the use_irun target in the Makefile.
+
+How to use:
+-----------
+
+To run this example do:
+
+"run_irun" 
+        or
+make NC_ROOT=`ncroot` ARCH=`cds_plat` COMPILER=gnu GCC_VERS=4.1 test_install
+        for gcc 4.1 or
+make NC_ROOT=`ncroot` ARCH=`cds_plat` COMPILER=gnu GCC_VERS=3.2.3 test_install
+        for gcc 3.2.3 (where supported) or
+make NC_ROOT=`ncroot` ARCH=`cds_plat` COMPILER=native test_install
+        for the "native' compiler (where supported)
+
+Included files:
+---------------
+
+Makefile
+  - Contains the use_irun target listed above to illustrate 
+    how to run this exampe with irun.
+
+Makefile.depends
+  - Contains object file dependencies for this example that are
+    necessary for Makefile to work correctly.
+
+README
+  - This file.
+
+ncsim.au
+  - Contains expected output from ncsim when running this example.
+
+run_irun
+  - Executable script to run this example using irun
+
+run.f
+  - irun options required by the run_irun script
+
+packet.h
+producer.h
+test.cpp
+  - Contains SystemC src code required in this example.
+
+packet.sv
+consumer.sv
+test.sv
+  - Contains SystemVerilog source code required in this example.
+

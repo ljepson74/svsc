@@ -1,0 +1,8 @@
+1a) shows blue
+    $monitor("%0s: str1 is now %0s",line, str1);
+    str1="blue";
+   
+1b) shows red
+    $monitor("%0s: str1 is now %0s",line, str1);
+    str1="blue";
+    str1="red";

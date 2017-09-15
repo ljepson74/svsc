@@ -1,0 +1,94 @@
+*** Message Type: info ***
+When: Mon Sep 30 19:20:53 PDT 2013
+SimVision started.
+Version: TOOL:  simvision       12.20-s004
+User: lkj
+Host: srgo2img01.ba.imgtec.org
+Platform: Linux/x86_64/2.6.18-274.el5
+Started: Mon Sep 30 19:20:53 PDT 2013
+Command: /vl/edatools/extern/Cadence/INCISIV/12.2/004/tools.lnx86/simvision/bin/simvision.exe -connect dc:srgo2img01.ba.imgtec.org:47391 -nocopyright -layout cdebug
+Work Directory: /user/lkj/systemverilog_show/sysverilog_sandbox/lesson0025_sigsegv/debug_ncsim
+ 
+*** Message Type: info ***
+When: Mon Sep 30 19:20:54 PDT 2013
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Mon Sep 30 19:20:55 PDT 2013
+Connect to Simulator
+      Design: worklib.top:a
+   Languages: vhdl systemc
+   Simulator: NC-Sim
+     Version: TOOL: ncsim   12.20-s004
+        User: lkj
+        Host: srgo2img01.ba.imgtec.org
+Time Started: Mon Sep 30 19:20:50 PDT 2013
+  Process ID: 32464
+   Directory: /user/lkj/systemverilog_show/sysverilog_sandbox/lesson0025_sigsegv/debug_ncsim
+     Command: irun -sysc model.vhd top.vhd model.cpp -v93 -gnu -top top:a -access +rwc -g -layout cdebug
+
+ 
+*** Message Type: info ***
+When: Mon Sep 30 19:20:56 PDT 2013
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Mon Sep 30 19:20:58 PDT 2013
+Create source window: "Source Browser 1"
+ 
+*** Message Type: info ***
+When: Mon Sep 30 19:21:51 PDT 2013
+Exit NC-Sim: abnormal
+      Design: worklib.top:a
+   Languages: vhdl systemc
+   Simulator: NC-Sim
+     Version: TOOL: ncsim   12.20-s004
+        User: lkj
+        Host: srgo2img01.ba.imgtec.org
+Time Started: Mon Sep 30 19:20:50 PDT 2013
+  Process ID: 32464
+   Directory: /user/lkj/systemverilog_show/sysverilog_sandbox/lesson0025_sigsegv/debug_ncsim
+     Command: irun -sysc model.vhd top.vhd model.cpp -v93 -gnu -top top:a -access +rwc -g -layout cdebug
+
+ 
+*** Message Type: error ***
+When: Mon Sep 30 19:22:13 PDT 2013
+NC-Sim Crashed:
+      Design: worklib.top:a
+   Languages: vhdl systemc
+   Simulator: NC-Sim
+     Version: TOOL: ncsim   12.20-s004
+        User: lkj
+        Host: srgo2img01.ba.imgtec.org
+Time Started: Mon Sep 30 19:20:50 PDT 2013
+  Process ID: 32464
+   Directory: /user/lkj/systemverilog_show/sysverilog_sandbox/lesson0025_sigsegv/debug_ncsim
+     Command: irun -sysc model.vhd top.vhd model.cpp -v93 -gnu -top top:a -access +rwc -g -layout cdebug
+      Design: worklib.top:a
+   Languages: vhdl systemc
+   Simulator: NC-Sim
+     Version: TOOL:        ncsim   12.20-s004
+        User: lkj
+        Host: srgo2img01.ba.imgtec.org
+Time Started: Mon Sep 30 19:20:50 PDT 2013
+  Process ID: 32464
+   Directory: /user/lkj/systemverilog_show/sysverilog_sandbox/lesson0025_sigsegv/debug_ncsim
+     Command: irun -sysc model.vhd top.vhd model.cpp -v93 -gnu -top top:a -access +rwc -g -layout cdebug
+
+ 
+*** Message Type: info ***
+When: Mon Sep 30 19:33:18 PDT 2013
+Create source window: "Source Browser 2"
+ 
+*** Message Type: info ***
+When: Mon Sep 30 19:42:04 PDT 2013
+Delete source window: "Source Browser 2"
+ 
+*** Message Type: info ***
+When: Mon Sep 30 19:42:04 PDT 2013
+Delete source window: "Source Browser 1"
+ 
+*** Message Type: info ***
+When: Mon Sep 30 19:42:24 PDT 2013
+SimVision Exit.
+ 

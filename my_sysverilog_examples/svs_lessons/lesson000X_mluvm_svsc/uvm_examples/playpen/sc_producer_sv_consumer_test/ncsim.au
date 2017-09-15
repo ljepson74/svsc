@@ -1,0 +1,46 @@
+Loading snapshot worklib.topmodule:sv .................... Done
+SVSEED default: 1
+ncsim> run
+----------------------------------------------------------------
+----------------------------------------------------------------
+sctest::sctest
+svtest::build
+env::build
+consumer::new
+In SV consumer::build()
+In SC producer::build
+env::connect
+UVM_INFO @ 0: reporter [RNTST] Running test ...
+
+########################
+0 s: SC producer, putting packet: 17
+0 consumer putting in fifo          17
+0 consumer::run got from fifo:          17
+
+########################
+10 ns: SC producer, putting packet: 18
+10 consumer putting in fifo          18
+10 consumer::run got from fifo:          18
+
+########################
+20 ns: SC producer, putting packet: 19
+20 consumer putting in fifo          19
+20 consumer::run got from fifo:          19
+
+########################
+30 ns: SC producer, putting packet: 20
+30 consumer putting in fifo          20
+30 consumer::run got from fifo:          20
+
+########################
+40 ns: SC producer, putting packet: 21
+40 consumer putting in fifo          21
+40 consumer::run got from fifo:          21
+
+########################
+150 ns: stopping test
+
+SC simulation stopped by user.
+
+SystemC : SystemC stopped at time 150
+ncsim> exit

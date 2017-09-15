@@ -1,0 +1,3 @@
+setenv CERTIFY /vl/edatools/extern/Synplicity/certify_${CERTIFYVER}
+setenv IDENTIFY /vl/edatools/extern/Synplicity/identify_${IDENTIFYVER}
+setenv SYNPLIFY /vl/edatools/extern/Synplicity/fpga_${SYNPLIFYVER}

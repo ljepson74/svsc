@@ -1,0 +1,21 @@
+irun: 13.10-s032: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+Recompiling... reason: file './ASSERT_WARNING_STD_LOGIC_ARITH.vhd' is newer than expected.
+	expected: Tue Feb 10 10:06:02 2015
+	actual:   Thu Feb 12 15:09:21 2015
+ASSERT_WARNING_STD_LOGIC_ARITH.vhd:
+	errors: 0, warnings: 0
+WORKLIB.FOO:ARCH (architecture):
+	streams: 1, words: 442
+ncelab: *W,ARCMRA: Elaborating the WORKLIB.FOO:ARCH, MRA (most recently analyzed) architecture.
+	Elaborating the design hierarchy:
+	Top level design units:
+		:foo(arch):
+	Building instance specific data structures.
+	Design hierarchy summary:
+		     Instances  Unique
+		Components:  2       1
+		Processes:   2       2
+		Signals:     3       3
+	Writing initial simulation snapshot: WORKLIB.FOO:ARCH
+Loading snapshot worklib.foo:arch .................... Done
+ncsim> set pack_assert_off std_logic_arith ; run 100 ; exit

@@ -1,0 +1,9 @@
+rm -r csrc
+rm -r INCA_libs
+rm -r simv*
+rm -r work
+rm vc_hdrs.h
+rm *.log
+rm transcript
+rm *.wlf
+rm ncelab.err

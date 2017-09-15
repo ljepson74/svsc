@@ -1,0 +1,24 @@
+#!/bin/csh
+
+set curdir = `pwd`
+echo "curdir = $curdir";
+set workdir = `echo $curdir | awk '{sub("_10gEthernetMAC/.*", "hiccup"); print $0}'`
+echo "workdir = $workdir";
+
+setenv UCSC_PROJ_HOME $workdir	
+
+#########
+## Aliases
+
+#sim area
+alias usim   pushd $UCSC_PROJ_HOME/sim/verilog
+
+#testbench area (new)
+alias utb    pushd $UCSC_PROJ_HOME/testbench/systemverilog
+
+#testbench area (old)
+alias utbold pushd $UCSC_PROJ_HOME/testbench/verilog
+
+#tests
+alias utests pushd $UCSC_PROJ_HOME/testcases
+

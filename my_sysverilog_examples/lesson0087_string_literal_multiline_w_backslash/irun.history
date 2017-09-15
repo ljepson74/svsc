@@ -1,0 +1,4 @@
+s1(04Oct2016:06:14:07):  /vl/edatools/extern/Cadence/INCISIV/15.2/007/tools.lnx86/bin/irun -sv top.sv 
+s2(04Oct2016:06:38:02):  /vl/edatools/extern/Cadence/INCISIV/15.2/007/tools.lnx86/bin/irun -sv top.sv 
+s3(03Oct2016:22:57:31):  /vl/edatools/extern/Cadence/INCISIV/15.2/007/tools.lnx86/bin/irun top.sv 
+s4(03Oct2016:22:57:59):  /vl/edatools/extern/Cadence/INCISIV/15.2/007/tools.lnx86/bin/irun top.sv 

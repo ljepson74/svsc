@@ -1,0 +1,13 @@
+rmapats_mop.o: rmapats.m
+	@/vl/edatools/extern/Synopsys/Scirocco/2013.06/linux/bin/cgmop1 -gen_obj rmapats.m rmapats_mop.o
+
+rmapats.o: rmapats.c
+	@$(CC) $(CFLAGS) -c  -o rmapats.o rmapats.c
+rmapats%.o: rmapats%.c
+	@$(CC) $(CFLAGS) -c  -o $@ $<
+rmar.o: rmar.c
+	@$(CC) $(CFLAGS) -c  -o rmar.o rmar.c
+rmar%.o: rmar%.c
+	@$(CC) $(CFLAGS) -c  -o $@ $<
+
+include filelist.hsopt.objs

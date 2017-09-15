@@ -1,0 +1,13 @@
+module top;
+
+   logic [7:0] [1:0] packed2d;
+
+
+   initial begin
+      packed2d[0] = ;
+      packed2d[1] = ;
+      packed2d[2] = ;
+   end
+   
+
+endmodule // top

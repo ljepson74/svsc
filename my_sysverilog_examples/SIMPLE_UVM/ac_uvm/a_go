@@ -1,0 +1,1 @@
+irun +access+rwc -sv -uvm -uvmhome /vl/edatools/extern/Cadence/INCISIV/10.2/030/tools/uvm-1.1 -f a.vf a_dut.sv a_if.sv a_transaction.svh a_driver.svh a_env.svh a_configuration.svh a_test.svh a_top.sv

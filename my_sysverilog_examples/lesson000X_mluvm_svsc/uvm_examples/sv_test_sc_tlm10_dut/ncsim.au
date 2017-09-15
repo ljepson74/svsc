@@ -1,0 +1,75 @@
+Loading snapshot worklib.topmodule:sv .................... Done
+SVSEED default: 1
+tbtop::tbtop
+ncsim> run
+----------------------------------------------------------------
+----------------------------------------------------------------
+env::connect
+UVM_INFO @ 0: reporter [RNTST] Running test ...
+
+#################
+0 SV producer::run, putting         101
+0 s: SC dut received : packet: 101
+
+10 ns: SC dut producing output packet: 118
+
+10 SV checker : received         118
+
+#################
+60 SV producer::run, putting         102
+60 ns: SC dut received : packet: 102
+
+70 ns: SC dut producing output packet: 119
+
+70 SV checker : received         119
+
+#################
+120 SV producer::run, putting         103
+120 ns: SC dut received : packet: 103
+
+130 ns: SC dut producing output packet: 120
+
+130 SV checker : received         120
+
+#################
+180 SV producer::run, putting         104
+180 ns: SC dut received : packet: 104
+
+190 ns: SC dut producing output packet: 121
+
+190 SV checker : received         121
+
+#################
+240 SV producer::run, putting         105
+240 ns: SC dut received : packet: 105
+
+250 ns: SC dut producing output packet: 122
+
+250 SV checker : received         122
+
+#################
+400 stopping test
+UVM_INFO INST_PATH/tools/uvm-1.1/uvm_lib/uvm_sv/sv/base/uvm_objection.svh(1120) @ 400000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    2
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+Simulation complete via $finish(1) at time 400 NS + 44
+ncsim> exit

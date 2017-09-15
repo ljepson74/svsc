@@ -1,0 +1,2 @@
+rm -rf INCA_libs;  
+irun +access+rwc -sv -uvm -uvmhome /vl/edatools/extern/Cadence/INCISIV/10.2/030/tools/uvm-1.1 -f f.vf  f_dut.sv f_if.sv f_top.sv f_driver.sv f_test.sv

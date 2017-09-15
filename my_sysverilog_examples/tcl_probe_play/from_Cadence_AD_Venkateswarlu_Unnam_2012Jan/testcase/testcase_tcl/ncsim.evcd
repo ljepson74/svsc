@@ -1,0 +1,26 @@
+$date
+    Jan 13, 2012  23:28:46
+$end
+$version
+    TOOL:	ncsim	10.20-s105
+$end
+$timescale
+    1 ns
+$end
+
+$scope module test_drink $end
+
+$scope module top $end
+$var port     [3:0] !    sd1_rd_en_io  $end
+$var port     [3:0] "    nickel_out  $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpports
+pXXXX 6666 6666 !
+pFFFF 0000 0000 "
+$end

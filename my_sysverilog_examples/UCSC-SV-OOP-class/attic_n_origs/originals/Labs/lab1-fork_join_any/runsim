@@ -1,0 +1,1 @@
+vcs -full64 +vcs+lic+wait -sverilog -R -l vcs.log testcase.sv 

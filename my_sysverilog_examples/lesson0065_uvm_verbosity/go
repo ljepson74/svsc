@@ -1,0 +1,1 @@
+irun -sv -uvm top.sv

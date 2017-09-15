@@ -1,0 +1,2 @@
+select_coverage -betf -module *
+select_functional

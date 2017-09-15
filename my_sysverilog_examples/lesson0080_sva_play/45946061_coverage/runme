@@ -1,0 +1,2 @@
+irun cust_top.sv -coverage all 
+imc -exec imc.cmd

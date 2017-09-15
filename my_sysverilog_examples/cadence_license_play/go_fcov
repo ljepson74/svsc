@@ -1,0 +1,1 @@
+irun cadence_license_play.sv -covdut cadence_license_play -covfile fcovfile.ccf -covoverwrite

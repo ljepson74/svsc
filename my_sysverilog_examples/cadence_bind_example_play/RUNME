@@ -1,0 +1,2 @@
+irun *.v -extbind bind.sv assertion_1.sv -clean
+

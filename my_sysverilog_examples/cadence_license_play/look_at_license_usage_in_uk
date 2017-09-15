@@ -1,0 +1,3 @@
+#IMGUSER should be set to lkj or whatever your img username is.
+rsh -l $IMGUSER sun1.seg /vl/edatools/tools/license/GetVendorLmstats.pl -tag cadence | grep caustic | grep -v VERILOG-XL
+#/vl/edatools/tools/license/GetVendorLmstats.pl -tag cadence | grep linc

@@ -1,0 +1,13 @@
+1. 
+stimulus/dut/top
+then put an if in top and make the connections, reducing 'wires' in this module
+i.e. stimulus/dut/top_w_if
+
+2.
+advance the previous to this
+stimulus_w_if/dut_w_if/top_w_if
+
+3.
+use virtual interface
+
+

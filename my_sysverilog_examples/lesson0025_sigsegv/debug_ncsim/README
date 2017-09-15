@@ -1,0 +1,102 @@
+debug_ncsim: use a C++ debugger to debug a SIGSEGV generated from within SystemC code in the ncsim program
+
+Example Name:
+-------------
+debug_ncsim
+
+Purpose:
+--------
+This example shows how to use a C++ debugger with SystemC linked with
+the ncsim program, including how to explicitly ignore Unix signals
+generated for internal use by the ncsim program. The example uses
+a mixed VHDL and SystemC design (same design as example vhdl_systemc).
+The SystemC design intentionally generates a SIGSEGV or SIGBUS (depending on
+the OS/hardware used to simulate the design) and then shows how a
+debugger like gdb or dbx can be used to stop at the point in the user
+SystemC code where the SIGSEGV or SIGBUS is raised.
+
+HOW TO DEBUG IN GUI MODE:
+=========================
+
+On the first time run :
+
+irun -sysc *.vhd *.cpp -v93 -gnu -top top:a -access +rwc -g -layout cdebug  
+
+you should get error as :
+
+breakpoint 1, nc_signal_raised at file ???:???
+-exec-continue
+Current language:  auto; currently c++
+Program received signal SIGSEGV, Segmentation fault.
+0xf70c0776 in model::run at file /net/vlno-omprakas/export/home/omprakas/debug_ncsim/model.h:25
+
+Then again run the testcase as :
+
+irun -sysc *.vhd *.cpp -v93 -gnu -top top:a -access +rwc -g -layout cdebug
+
+and set the line breakpoint at line number 25 of model.h
+
+Then run the testcase again as :
+
+irun -sysc *.vhd *.cpp -v93 -gnu -top top:a -access +rwc -g -layout cdebug
+
+Once it hits the breakpoint on that line then in the gdb window put the command as :
+
+(gdb) p *(int *)makeSEGV
+Cannot access memory at address 0x0
+Cannot access memory at address 0x0
+
+
+HOW TO DEBUG IN BATCH MODE:
+============================
+
+irun -sysc *.vhd *.cpp -gdb -v93 -gnu -top top:a -access +rwc -g
+
+Loading snapshot worklib.top:a .................... Done
+[New SystemC Thread "main" 0]
+[Switching to SystemC Thread "main" 0]
+
+Breakpoint 3, 0x0876cfa8 in scDebugEntry ()
+(gdb) cont
+Continuing.
+
+Breakpoint 4, 0x08c05ec6 in ncdbg_libs_loaded ()
+(gdb) cont
+Continuing.
+
+The SystemC(r) Code included in this Product is Copyright  1996 - 2006 by all Contributors.  All rights reserved.
+
+The SystemC Code included in this Product has been modified by Cadence Design Systems, Inc. and CoWare, Inc. All such modifications are Copyright (c) 2004-2010 Cadence De
+sign Systems, Inc. and Copyright (c) 2004 CoWare, Inc.  All Rights Reserved.
+
+SystemC(r) is a registered trademark of Open SystemC Initiative, Inc. in the United States and other countries and is used with permission.
+
+ncsim> run
+0 ns  inPort = U, outPort = U
+ncsim: *E,SIGUSR: Unix Signal SIGSEGV raised from user application code.
+
+Breakpoint 1, 0x0876cfb1 in nc_signal_raised ()
+
+Program received signal SIGSEGV, Segmentation fault.
+0xf711b776 in model::run (this=0xb59b728) at /net/vlno-omprakas/export/home/omprakas/debug_ncsim/model.h:25
+25          makeSEGV = *(int *)makeSEGV;
+(gdb) list
+20        {
+21          int makeSEGV = 0;
+22      #ifdef _AIX
+23          makeSEGV = *((int *)(float *)( makeSEGV - 100000));
+24      #else
+25          makeSEGV = *(int *)makeSEGV;
+26      #endif
+27
+28          out.write(in.read());
+29        }
+(gdb) p *(int *)makeSEGV
+Cannot access memory at address 0x0
+(gdb)
+
+SOLUTION:
+=========
+Here the error is in model.h file at line number 25.
+There is a null pointer assignment. 
+Code needs to be corrected.

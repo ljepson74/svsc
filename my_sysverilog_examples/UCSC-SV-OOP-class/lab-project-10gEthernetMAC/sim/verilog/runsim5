@@ -1,0 +1,25 @@
+vcs -full64 +vcs+lic+wait -sverilog -R -l vcs.zero_ipg_packet.log \
+-debug_pp \
+-override_timescale=1ps/1ps \
+../../rtl/verilog/*.v \
+../../testbench/systemverilog/wb_if.sv \
+../../testbench/systemverilog/pkt_tx_if.sv \
+../../testbench/systemverilog/pkt_rx_if.sv \
+../../testbench/systemverilog/xgmii_tx_if.sv \
+../../testbench/systemverilog/xgmii_rx_if.sv \
+../../testbench/systemverilog/tasks.sv \
+../../testbench/systemverilog/packet.sv \
+../../testbench/systemverilog/coverage.sv \
+../../testbench/systemverilog/scoreboard.sv \
+../../testbench/systemverilog/monitor.sv \
+../../testbench/systemverilog/generator.sv \
+../../testbench/systemverilog/driver.sv \
+../../testbench/systemverilog/env.sv \
+../../testcases/zero_ipg_packet/testcase.sv \
++incdir+../../rtl/include \
+../../testbench/systemverilog/testbench.sv \
++ntb_random_seed_automatic \
+-cm line+cond+branch+fsm+tgl \
+-cm path -lca \
+-cm_log ./coverage.zero_ipg_packet.log \
+-cm_dir ./COVERAGE

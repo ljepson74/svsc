@@ -1,0 +1,4 @@
+Goal:
+Familiarize myself with the interplay between 'physical' (DUT,interface,tb_top) and abstract (driver, virtual interface, env) worlds in UVM.
+
+
